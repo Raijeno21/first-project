@@ -1,0 +1,42 @@
+nav{
+    position: fixed;
+   display: flex;
+   flex-direction: column;
+   width:200px;
+   justify-content: space-between;
+    margin-top: 60px;
+    bottom:0px;
+    top:0px;
+    left:0px;
+    color: #FF007F;
+    
+}
+.navigate-cakes{
+    padding-top: 1px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    justify-content: space-between;
+    border-right: 5px solid #FF007F;
+    padding-bottom: 1px
+}
+.footer{
+    height: 50%;
+    width: 100%;
+    background-color: #FF007F;
+    border-right: 5px solid #FF007F;
+}
+.nav{
+    height: 50px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 50px;
+}
+.nav:hover{
+    background-color: #FF007F;
+    color: white;
+}

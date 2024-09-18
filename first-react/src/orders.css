@@ -1,0 +1,15 @@
+.my-orders{
+    margin-top: 60px;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+.order-summary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.payDetails{
+    display: grid;
+    grid-template-columns: 1fr 20%;
+
+}

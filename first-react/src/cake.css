@@ -1,0 +1,37 @@
+
+.CAKE{
+    margin-top: 70px;
+    display: grid;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 50px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    padding-right: 50px;
+}
+.cake-details{
+height:500px
+}
+.cakeImage{
+    height: 70%;
+    width: 100%;
+}
+.comments{
+        width: 100%;  /* Fixed width */
+        height: 100%; /* Fixed height */
+        padding: 10px; /* Padding inside the textarea */
+        border: 2px solid #ccc; /* Border color and thickness */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 16px; /* Text size */
+        resize: none; /* Disable resizing */
+        box-sizing: border-box; /* Ensure padding and border are included in width/height */
+        background-color: #f9f9f9; /* Light background color */
+        outline: none; /* Remove default outline */
+        padding-right: 50px;
+}
+article{
+    height: 30%;
+}
+.cakeName{
+    color: red;
+}

@@ -52,7 +52,7 @@
             "name": "choco7",
             "flavor": "chocolate moist",
             "image": "/images/chocolate/choco7.jpeg",
-            "price": 50,
+            "price": 500,
             "reviews": 8,
             "id":7
         },

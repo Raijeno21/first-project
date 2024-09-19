@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { OrderContext } from './orderContext';
 
 const Head = () => {
+    const {carts}=useContext(OrderContext)
     return (
         <header className="head-container">
            
@@ -31,7 +33,7 @@ const Head = () => {
                  <Link to ='/orders'>MY ORDERS</Link>   
                 </div>
             </div>
-            <div className="counter">0</div>
+            <div className="counter">{carts}</div>
         </header>
     );
 }

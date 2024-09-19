@@ -4,7 +4,8 @@
   import { OrderContext } from './orderContext';
 
   const Generatecakes = ({ loopCake, selectedFlavor }) => {
-    const { orderArray, setOrderArray } = useContext(OrderContext);
+    const { orderArray, setOrderArray ,carts,setCarts} = useContext(OrderContext);
+ 
 
     const filteredCakes = selectedFlavor === 'all'
       ? loopCake
@@ -13,6 +14,7 @@
     const handleBuy = (buy) => {
       const cakeID = buy.target.getAttribute('data-cakeid');
       const searchID = orderArray.find((orderID)=>orderID.cakeID === cakeID );
+      setCarts(carts + 1)
       if (!searchID){
           setOrderArray((currentOrderArray)=>[...currentOrderArray,{cakeID,quantity:1}])
       }

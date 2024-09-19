@@ -6,7 +6,6 @@
   import './test.css';
   import App from './App';
   import './cake.css';
-  import './orderSummary.css';
   import { OrderProvider } from './orderContext';
   import './orders.css';
 

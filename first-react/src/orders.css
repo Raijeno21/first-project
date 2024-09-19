@@ -1,15 +1,9 @@
 .my-orders{
+    display:grid;
+    grid-template-columns: 50% 50%;
     margin-top: 60px;
-    padding-top: 15px;
-    margin-left: 15px;
+    color:red
 }
-
-.order-summary{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.payDetails{
-    display: grid;
-    grid-template-columns: 1fr 20%;
-
+.pay-summary{
+    margin-top: 0px;
 }

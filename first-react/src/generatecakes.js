@@ -12,7 +12,6 @@ const Generatecakes = ({ loopCake, selectedFlavor }) => {
 
   const handleBuy = (buy) => {
     const cakeID = buy.target.getAttribute('data-cakeid');
-    console.log(cakeID);
     setOrderArray(prevOrderArray => [...prevOrderArray, cakeID]);
   };
 

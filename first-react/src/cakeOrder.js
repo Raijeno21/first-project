@@ -5,8 +5,7 @@ import { Link } from "react-router-dom";
 import Paydetails from "./payment";
 
 const CakeOrders = () => {
-  const { orderArray } = useContext(OrderContext);
-  const { cakes } = useFetch("http://localhost:7000/cakes");
+  const { orderArray,cakes } = useContext(OrderContext); 
 
   if (!cakes) {
     return <div>Loading cakes...</div>;

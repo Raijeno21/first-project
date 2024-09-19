@@ -1,10 +1,9 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Navbar from "./navbar";
 import Generatecakes from "./generatecakes";
-import useFetch from "./useFetch";
+import { OrderContext } from "./orderContext";
 const MainContent = () => {
-
-  const { cakes, err } = useFetch("http://localhost:7000/cakes");
+  const {cakes,err} = useContext(OrderContext);
   const [flavor, setFlavor] = useState("all");
 
   return (
